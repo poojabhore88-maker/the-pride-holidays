@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - The Pride Holidays</title>
+    <meta name="description" content="Explore domestic destinations with The Pride Holidays. Beaches, hills, spiritual sites, adventure spots, and family-friendly locations.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/images/logo.png" alt="The Pride Holidays" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-container">
+            <h1>Explore Domestic Destinations</h1>
+            <p>Discover incredible destinations across India. From pristine beaches to majestic mountains, spiritual journeys to adventure trails.</p>
+        </div>
+    </section>
+
+    <!-- Destination Categories -->
+    <section class="destinations-section">
+        <div class="container">
+            <div class="categories-grid">
+                <!-- Beaches Category -->
+                <div class="destination-card">
+                    <div class="card-image">
+                        <div class="placeholder-image">🏖️</div>
+                        <div class="coming-soon-badge">Coming Soon</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Beaches</h3>
+                        <p>Pristine coastlines, golden sands, and crystal-clear waters. Perfect for relaxation and water sports.</p>
+                        <div class="card-features">
+                            <span>🌊 Water Sports</span>
+                            <span>🏝️ Island Hopping</span>
+                            <span>🌅 Sunset Views</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="best-time">Best Time: Oct - Mar</span>
+                            <span class="duration">3-5 Days</span>
+                        </div>
+                        <button class="enquire-btn" onclick="openEnquiryForm('Beaches')">Enquire Now</button>
+                    </div>
+                </div>
+
+                <!-- Hills Category -->
+                <div class="destination-card">
+                    <div class="card-image">
+                        <div class="placeholder-image">⛰️</div>
+                        <div class="coming-soon-badge">Coming Soon</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Hills</h3>
+                        <p>Majestic mountains, lush valleys, and charming hill stations. Ideal for nature lovers and adventure seekers.</p>
+                        <div class="card-features">
+                            <span>🥾 Trekking</span>
+                            <span>🌲 Nature Walks</span>
+                            <span>🏔️ Mountain Views</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="best-time">Best Time: Apr - Jun</span>
+                            <span class="duration">4-6 Days</span>
+                        </div>
+                        <button class="enquire-btn" onclick="openEnquiryForm('Hills')">Enquire Now</button>
+                    </div>
+                </div>
+
+                <!-- Spiritual Category -->
+                <div class="destination-card">
+                    <div class="card-image">
+                        <div class="placeholder-image">🕉️</div>
+                        <div class="coming-soon-badge">Coming Soon</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Spiritual</h3>
+                        <p>Ancient temples, sacred rivers, and spiritual retreats. Find peace and enlightenment on these journeys.</p>
+                        <div class="card-features">
+                            <span>🏛️ Ancient Temples</span>
+                            <span>🧘 Meditation</span>
+                            <span>🙏 Spiritual Ceremonies</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="best-time">Best Time: Oct - Mar</span>
+                            <span class="duration">5-7 Days</span>
+                        </div>
+                        <button class="enquire-btn" onclick="openEnquiryForm('Spiritual')">Enquire Now</button>
+                    </div>
+                </div>
+
+                <!-- Adventure Category -->
+                <div class="destination-card">
+                    <div class="card-image">
+                        <div class="placeholder-image">🪂</div>
+                        <div class="coming-soon-badge">Coming Soon</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Adventure</h3>
+                        <p>Thrilling activities, adrenaline-pumping experiences, and outdoor adventures for the bold and daring.</p>
+                        <div class="card-features">
+                            <span>🪂 Paragliding</span>
+                            <span>🧗 Rock Climbing</span>
+                            <span>🌊 River Rafting</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="best-time">Best Time: Sep - Jun</span>
+                            <span class="duration">3-4 Days</span>
+                        </div>
+                        <button class="enquire-btn" onclick="openEnquiryForm('Adventure')">Enquire Now</button>
+                    </div>
+                </div>
+
+                <!-- Family Category -->
+                <div class="destination-card">
+                    <div class="card-image">
+                        <div class="placeholder-image">👨‍👩‍👧‍👦</div>
+                        <div class="coming-soon-badge">Coming Soon</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Family</h3>
+                        <p>Kid-friendly destinations, theme parks, and family activities. Create lasting memories with your loved ones.</p>
+                        <div class="card-features">
+                            <span>🎢 Theme Parks</span>
+                            <span>🎪 Entertainment</span>
+                            <span>🏨 Family Resorts</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="best-time">Best Time: Oct - Mar</span>
+                            <span class="duration">4-5 Days</span>
+                        </div>
+                        <button class="enquire-btn" onclick="openEnquiryForm('Family')">Enquire Now</button>
+                    </div>
+                </div>
+
+                <!-- Honeymoon Category -->
+                <div class="destination-card">
+                    <div class="card-image">
+                        <div class="placeholder-image">💕</div>
+                        <div class="coming-soon-badge">Coming Soon</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Honeymoon</h3>
+                        <p>Romantic getaways, intimate settings, and beautiful destinations perfect for celebrating your love.</p>
+                        <div class="card-features">
+                            <span>🌹 Romantic Dinners</span>
+                            <span>🏖️ Beach Resorts</span>
+                            <span>💑 Couple Activities</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="best-time">Best Time: Oct - Mar</span>
+                            <span class="duration">5-7 Days</span>
+                        </div>
+                        <button class="enquire-btn" onclick="openEnquiryForm('Honeymoon')">Enquire Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Enquiry Form -->
+    <div id="quickEnquiryModal" class="modal">
+        <div class="modal-content">
+            <h3>Quick Enquiry</h3>
+            <p>Interested in <span id="destinationType"></span>? Let us help you plan the perfect trip!</p>
+            <form id="quickEnquiryForm">
+                <div class="form-group">
+                    <label for="quickName">Full Name *</label>
+                    <input type="text" id="quickName" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="quickPhone">Phone (WhatsApp) *</label>
+                    <input type="tel" id="quickPhone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="quickEmail">Email *</label>
+                    <input type="email" id="quickEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="quickDates">Travel Dates or Month *</label>
+                    <input type="text" id="quickDates" name="dates" placeholder="e.g., December 2024" required>
+                </div>
+                <div class="form-group">
+                    <label for="quickTravellers">Number of Travellers *</label>
+                    <input type="number" id="quickTravellers" name="travellers" min="1" required>
+                </div>
+                <input type="hidden" id="quickDestination" name="destination">
+                <button type="submit" class="submit-btn">Submit Enquiry</button>
+            </form>
+            <button class="close-modal" onclick="closeQuickEnquiry()">Close</button>
+        </div>
+    </div>
+
+    <!-- Sticky WhatsApp Button -->
+    <a href="https://wa.me/919028458981?text=Hi%20The%20Pride%20Holidays,%20I%20want%20to%20plan%20a%20trip." class="whatsapp-float" target="_blank">
+        <span>💬</span>
+    </a>
+
+    <script src="script.js"></script>
+    <script>
+        // Quick Enquiry Functions
+        function openEnquiryForm(destination) {
+            document.getElementById('destinationType').textContent = destination;
+            document.getElementById('quickDestination').value = destination;
+            document.getElementById('quickEnquiryModal').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeQuickEnquiry() {
+            document.getElementById('quickEnquiryModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Quick Enquiry Form Submission
+        document.getElementById('quickEnquiryForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData.entries());
+            
+            const submitBtn = e.target.querySelector('.submit-btn');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Submitting...';
+            submitBtn.disabled = true;
+            
+            try {
+                const response = await fetch(WEB_APP_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        ...data,
+                        segment: 'Not specified',
+                        budget: 'Not specified',
+                        source: window.location.pathname,
+                        notifyTo: 'youremail@example.com',
+                        autoReply: true
+                    })
+                });
+                
+                const result = await response.json();
+                
+                if (result.ok) {
+                    closeQuickEnquiry();
+                    showSuccessModal();
+                    updateWhatsAppLink(data);
+                    e.target.reset();
+                } else {
+                    throw new Error(result.error || 'Failed to submit enquiry');
+                }
+            } catch (error) {
+                console.error('Error submitting form:', error);
+                alert('Sorry, there was an error submitting your enquiry. Please try again or contact us directly on WhatsApp.');
+            } finally {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }
+        });
+
+        // Close modal when clicking outside
+        window.addEventListener('click', (event) => {
+            if (event.target === document.getElementById('quickEnquiryModal')) {
+                closeQuickEnquiry();
+            }
+        });
+    </script>
+</body>
+</html>

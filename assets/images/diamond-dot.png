@@ -1,0 +1,11 @@
+# Diamond Dot for "i" in Pride
+
+This file should be replaced with a small diamond image (about 8x8 pixels) that will be used as the dot above the "i" in "Pride".
+
+Instructions:
+1. Create or find a small diamond image (golden color preferred)
+2. Save it as "diamond-dot.png" in this folder
+3. Recommended size: 8x8 pixels to 12x12 pixels
+4. Format: PNG with transparent background
+
+The CSS will use this image to replace the dot on the "i" in "Pride".

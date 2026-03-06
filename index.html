@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pride Holidays - From Dream to Destination</title>
+    <meta name="description" content="Plan your perfect trip with The Pride Holidays. Domestic travel packages with clear pricing, WhatsApp support, and end-to-end assistance.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/images/logo.png" alt="The Pride Holidays" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">The Pride Holidays</h1>
+                <p class="hero-tagline">From Dream to Destination</p>
+                <p class="hero-description">Your trusted partner for domestic travel experiences. Clear pricing, instant WhatsApp support, and personalized itineraries.</p>
+                
+                <!-- Trust Blocks -->
+                <div class="trust-blocks">
+                    <div class="trust-item">
+                        <div class="trust-icon">💰</div>
+                        <span>Clear Pricing</span>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">⚡</div>
+                        <span>WhatsApp Fast Response</span>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">🤝</div>
+                        <span>End-to-End Support</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Enquiry Form -->
+            <div class="enquiry-form-container">
+                <h3>Plan My Trip</h3>
+                <form id="enquiryForm" class="enquiry-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone (WhatsApp) *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="segment">Travel Type *</label>
+                            <select id="segment" name="segment" required>
+                                <option value="">Select Travel Type</option>
+                                <option value="Family">Family</option>
+                                <option value="Friends">Friends</option>
+                                <option value="Honeymoon">Honeymoon</option>
+                                <option value="Professional">Professional</option>
+                                <option value="Senior">Senior</option>
+                                <option value="Corporate">Corporate</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="destination">Destination *</label>
+                            <select id="destination" name="destination" required>
+                                <option value="">Select Destination</option>
+                                <option value="Not decided yet">Not decided yet</option>
+                                <option value="Beaches">Beaches</option>
+                                <option value="Hills">Hills</option>
+                                <option value="Spiritual">Spiritual</option>
+                                <option value="Adventure">Adventure</option>
+                                <option value="Family">Family</option>
+                                <option value="Honeymoon">Honeymoon</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="dates">Travel Dates or Month *</label>
+                            <input type="text" id="dates" name="dates" placeholder="e.g., December 2024" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="travellers">Number of Travellers *</label>
+                            <input type="number" id="travellers" name="travellers" min="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Budget Range *</label>
+                            <select id="budget" name="budget" required>
+                                <option value="">Select Budget</option>
+                                <option value="5,000 - 10,000">₹5,000 - ₹10,000</option>
+                                <option value="10,000 - 25,000">₹10,000 - ₹25,000</option>
+                                <option value="25,000 - 50,000">₹25,000 - ₹50,000</option>
+                                <option value="50,000 - 1,00,000">₹50,000 - ₹1,00,000</option>
+                                <option value="1,00,000+">₹1,00,000+</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <!-- Optional Fields -->
+                    <div class="optional-fields">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="departureCity">Departure City</label>
+                                <input type="text" id="departureCity" name="departureCity">
+                            </div>
+                            <div class="form-group">
+                                <label for="hotelPreference">Hotel Preference</label>
+                                <select id="hotelPreference" name="hotelPreference">
+                                    <option value="Any">Any</option>
+                                    <option value="3★">3★</option>
+                                    <option value="4★">4★</option>
+                                    <option value="5★">5★</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="notes">Notes / Requirements</label>
+                            <textarea id="notes" name="notes" rows="3" placeholder="Tell us about your dream trip..."></textarea>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Plan My Trip</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <h3>🎉 Thanks! We'll contact you shortly.</h3>
+            <p>Your trip enquiry has been received. Our team will reach out with personalized package options.</p>
+            <div class="modal-actions">
+                <a href="https://wa.me/919028458981?text=Hi%20The%20Pride%20Holidays,%20I%20want%20to%20plan%20a%20trip.%20My%20name%20is%20____.%20Destination%20____.%20Dates%20____." class="whatsapp-btn" target="_blank">
+                    <span>💬</span> Chat on WhatsApp
+                </a>
+                <a href="mailto:info@theprideholidays.com" class="email-btn">
+                    <span>✉️</span> Email us
+                </a>
+            </div>
+            <button class="close-modal" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <!-- Sticky WhatsApp Button -->
+    <a href="https://wa.me/919028458981?text=Hi%20The%20Pride%20Holidays,%20I%20want%20to%20plan%20a%20trip." class="whatsapp-float" target="_blank">
+        <span>💬</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

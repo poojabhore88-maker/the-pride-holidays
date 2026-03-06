@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - The Pride Holidays</title>
+    <meta name="description" content="Complete travel services by The Pride Holidays. Tour packages, bookings, visa support, insurance, and custom itineraries for domestic travel.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/images/logo.png" alt="The Pride Holidays" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-container">
+            <h1>Our Travel Services</h1>
+            <p>Comprehensive travel solutions tailored to your needs. From planning to execution, we've got you covered.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <div class="services-grid">
+                <!-- Tour Packages -->
+                <div class="service-card">
+                    <div class="service-icon">📦</div>
+                    <h3>Tour Packages</h3>
+                    <p>Pre-designed travel packages covering the best domestic destinations. All-inclusive deals with transparent pricing.</p>
+                    <ul class="service-features">
+                        <li>✅ Accommodation included</li>
+                        <li>✅ Transportation arranged</li>
+                        <li>✅ Guided tours available</li>
+                        <li>✅ Meals as per itinerary</li>
+                    </ul>
+                    <button class="service-btn" onclick="openServiceEnquiry('Tour Packages')">Enquire Now</button>
+                </div>
+
+                <!-- Bookings -->
+                <div class="service-card">
+                    <div class="service-icon">🎫</div>
+                    <h3>Bookings & Reservations</h3>
+                    <p>Hassle-free booking services for hotels, flights, trains, and local transportation. Best rates guaranteed.</p>
+                    <ul class="service-features">
+                        <li>✅ Hotel reservations</li>
+                        <li>✅ Flight bookings</li>
+                        <li>✅ Train tickets</li>
+                        <li>✅ Local transport</li>
+                    </ul>
+                    <button class="service-btn" onclick="openServiceEnquiry('Bookings & Reservations')">Enquire Now</button>
+                </div>
+
+                <!-- Visa Support -->
+                <div class="service-card">
+                    <div class="service-icon">🛂</div>
+                    <h3>Visa Support</h3>
+                    <p>Complete visa assistance for international travel requirements. Documentation guidance and application support.</p>
+                    <ul class="service-features">
+                        <li>✅ Document preparation</li>
+                        <li>✅ Application assistance</li>
+                        <li>✅ Status tracking</li>
+                        <li>✅ Expert consultation</li>
+                    </ul>
+                    <button class="service-btn" onclick="openServiceEnquiry('Visa Support')">Enquire Now</button>
+                </div>
+
+                <!-- Travel Insurance -->
+                <div class="service-card">
+                    <div class="service-icon">🛡️</div>
+                    <h3>Travel Insurance</h3>
+                    <p>Comprehensive travel insurance coverage for peace of mind. Medical emergencies, trip cancellations, and more.</p>
+                    <ul class="service-features">
+                        <li>✅ Medical coverage</li>
+                        <li>✅ Trip cancellation</li>
+                        <li>✅ Baggage protection</li>
+                        <li>✅ 24/7 assistance</li>
+                    </ul>
+                    <button class="service-btn" onclick="openServiceEnquiry('Travel Insurance')">Enquire Now</button>
+                </div>
+
+                <!-- Custom Itineraries -->
+                <div class="service-card">
+                    <div class="service-icon">🗺️</div>
+                    <h3>Custom Itineraries</h3>
+                    <p>Personalized travel plans designed around your preferences, budget, and schedule. Unique experiences guaranteed.</p>
+                    <ul class="service-features">
+                        <li>✅ Tailored experiences</li>
+                        <li>✅ Flexible scheduling</li>
+                        <li>✅ Budget optimization</li>
+                        <li>✅ Local insights</li>
+                    </ul>
+                    <button class="service-btn" onclick="openServiceEnquiry('Custom Itineraries')">Enquire Now</button>
+                </div>
+
+                <!-- Group Travel -->
+                <div class="service-card">
+                    <div class="service-icon">👥</div>
+                    <h3>Group Travel</h3>
+                    <p>Special arrangements for corporate groups, school trips, and family gatherings. Group discounts and coordination.</p>
+                    <ul class="service-features">
+                        <li>✅ Group discounts</li>
+                        <li>✅ Dedicated coordinator</li>
+                        <li>✅ Customized activities</li>
+                        <li>✅ Team building options</li>
+                    </ul>
+                    <button class="service-btn" onclick="openServiceEnquiry('Group Travel')">Enquire Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <h2>How It Works</h2>
+            <p>Simple steps to plan your perfect trip</p>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Share Your Dream</h3>
+                    <p>Tell us about your travel preferences, budget, and dream destination</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Get Customized Plan</h3>
+                    <p>Our experts create a personalized itinerary with best options</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Book & Confirm</h3>
+                    <p>Review and confirm your plan. We handle all bookings and arrangements</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Enjoy Your Trip</h3>
+                    <p>Travel with confidence. We're available 24/7 for any assistance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Enquiry Modal -->
+    <div id="serviceEnquiryModal" class="modal">
+        <div class="modal-content">
+            <h3>Service Enquiry</h3>
+            <p>Interested in <span id="serviceType"></span>? Let us help you!</p>
+            <form id="serviceEnquiryForm">
+                <div class="form-group">
+                    <label for="serviceName">Full Name *</label>
+                    <input type="text" id="serviceName" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="servicePhone">Phone (WhatsApp) *</label>
+                    <input type="tel" id="servicePhone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="serviceEmail">Email *</label>
+                    <input type="email" id="serviceEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="serviceMessage">Message</label>
+                    <textarea id="serviceMessage" name="notes" rows="3" placeholder="Tell us more about your requirements..."></textarea>
+                </div>
+                <input type="hidden" id="serviceNameField" name="service">
+                <button type="submit" class="submit-btn">Submit Enquiry</button>
+            </form>
+            <button class="close-modal" onclick="closeServiceEnquiry()">Close</button>
+        </div>
+    </div>
+
+    <!-- Sticky WhatsApp Button -->
+    <a href="https://wa.me/919028458981?text=Hi%20The%20Pride%20Holidays,%20I%20want%20to%20plan%20a%20trip." class="whatsapp-float" target="_blank">
+        <span>💬</span>
+    </a>
+
+    <script src="script.js"></script>
+    <script>
+        // Service Enquiry Functions
+        function openServiceEnquiry(service) {
+            document.getElementById('serviceType').textContent = service;
+            document.getElementById('serviceNameField').value = service;
+            document.getElementById('serviceEnquiryModal').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeServiceEnquiry() {
+            document.getElementById('serviceEnquiryModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Service Enquiry Form Submission
+        document.getElementById('serviceEnquiryForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData.entries());
+            
+            const submitBtn = e.target.querySelector('.submit-btn');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Submitting...';
+            submitBtn.disabled = true;
+            
+            try {
+                const response = await fetch(WEB_APP_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        ...data,
+                        segment: 'Service Enquiry',
+                        destination: 'Not specified',
+                        dates: 'Not specified',
+                        travellers: 'Not specified',
+                        budget: 'Not specified',
+                        source: window.location.pathname,
+                        notifyTo: 'youremail@example.com',
+                        autoReply: true
+                    })
+                });
+                
+                const result = await response.json();
+                
+                if (result.ok) {
+                    closeServiceEnquiry();
+                    showSuccessModal();
+                    updateWhatsAppLink(data);
+                    e.target.reset();
+                } else {
+                    throw new Error(result.error || 'Failed to submit enquiry');
+                }
+            } catch (error) {
+                console.error('Error submitting form:', error);
+                alert('Sorry, there was an error submitting your enquiry. Please try again or contact us directly on WhatsApp.');
+            } finally {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }
+        });
+
+        // Close modal when clicking outside
+        window.addEventListener('click', (event) => {
+            if (event.target === document.getElementById('serviceEnquiryModal')) {
+                closeServiceEnquiry();
+            }
+        });
+    </script>
+</body>
+</html>
