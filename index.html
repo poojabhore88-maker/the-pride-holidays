@@ -3,22 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Pride Holidays - From Dream to Destination</title>
-    <meta name="description" content="Plan your perfect trip with The Pride Holidays. Domestic travel packages with clear pricing, WhatsApp support, and end-to-end assistance.">
+    <title>The Pride Holidays - Travelling was never more beautiful</title>
+    <meta name="description" content="The Pride Holidays - Your trusted partner for domestic travel experiences. Beach destinations, hill stations, and customized tour packages.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span>📞 +91 9028458981</span>
+                <span>✉️ info@theprideholidays.com</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="#">About</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+                <a href="#">Login</a>
+            </div>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-container">
+        <div class="container">
             <div class="nav-logo">
                 <img src="assets/images/logo.png" alt="The Pride Holidays" class="logo-img">
             </div>
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="index.html" class="nav-link active">Home</a></li>
                 <li><a href="destinations.html" class="nav-link">Destinations</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
@@ -33,100 +49,251 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">The Pride Holidays</h1>
-                <p class="hero-tagline">From Dream to Destination</p>
-                <p class="hero-description">Your trusted partner for domestic travel experiences. Clear pricing, instant WhatsApp support, and personalized itineraries.</p>
-                
-                <!-- Trust Blocks -->
-                <div class="trust-blocks">
-                    <div class="trust-item">
-                        <div class="trust-icon">💰</div>
-                        <span>Clear Pricing</span>
-                    </div>
-                    <div class="trust-item">
-                        <div class="trust-icon">⚡</div>
-                        <span>WhatsApp Fast Response</span>
-                    </div>
-                    <div class="trust-item">
-                        <div class="trust-icon">🤝</div>
-                        <span>End-to-End Support</span>
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <div class="hero-bg" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/images/beach-hero.jpg');">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Travelling was never more beautiful</h1>
+                        <p class="hero-subtitle">Discover amazing destinations with The Pride Holidays</p>
+                        <div class="hero-buttons">
+                            <a href="destinations.html" class="btn-primary">Explore Destinations</a>
+                            <a href="contact.html" class="btn-secondary">Get in Touch</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-            <!-- Enquiry Form -->
-            <div class="enquiry-form-container">
-                <h3>Plan My Trip</h3>
-                <form id="enquiryForm" class="enquiry-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">Full Name *</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone (WhatsApp) *</label>
-                            <input type="tel" id="phone" name="phone" required>
-                        </div>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="email">Email *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="destination">Destination *</label>
-                            <select id="destination" name="destination" required>
-                                <option value="">Select Destination</option>
-                                <option value="Malwan Beach">Malwan Beach</option>
-                                <option value="Sindhudurga Beach">Sindhudurga Beach</option>
-                                <option value="Ganpati Pule">Ganpati Pule</option>
-                                <option value="Mahabaleshwar">Mahabaleshwar</option>
-                                <option value="Gokarna">Gokarna</option>
-                                <option value="Matheran">Matheran</option>
-                                <option value="Diveagar Beach">Diveagar Beach</option>
-                                <option value="Goa">Goa</option>
-                            </select>
+        </div>
+    </section>
+
+    <!-- Featured Packages -->
+    <section class="featured-packages">
+        <div class="container">
+            <h2 class="section-title">Featured Packages</h2>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="assets/images/malwan-package.jpg" alt="Malwan Beach Package">
+                        <div class="package-overlay">
+                            <h3>Malwan Beach Paradise</h3>
+                            <p>3 Days / 2 Nights</p>
                         </div>
                     </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="dates">Travel Dates</label>
-                            <input type="text" id="dates" name="dates" placeholder="e.g., 15-20 Dec 2024">
+                    <div class="package-content">
+                        <div class="package-price">
+                            <span class="price">₹8,999</span>
+                            <span class="per-person">Per Person</span>
                         </div>
-                        <div class="form-group">
-                            <label for="travel-type">Travel Type *</label>
-                            <select id="travel-type" name="travel-type" required>
-                                <option value="">Select Type</option>
-                                <option value="Couple">Couple</option>
-                                <option value="Family">Family</option>
-                                <option value="Friends">Friends</option>
-                                <option value="Solo">Solo</option>
-                                <option value="Group">Group</option>
-                                <option value="5,000 - 10,000">₹5,000 - ₹10,000</option>
-                                <option value="10,000 - 25,000">₹10,000 - ₹25,000</option>
-                                <option value="25,000 - 50,000">₹25,000 - ₹50,000</option>
-                                <option value="50,000 - 1,00,000">₹50,000 - ₹1,00,000</option>
-                                <option value="1,00,000+">₹1,00,000+</option>
-                            </select>
+                        <ul class="package-features">
+                            <li>✓ Beachside Accommodation</li>
+                            <li>✓ Water Sports Activities</li>
+                            <li>✓ Sindhudurga Fort Visit</li>
+                            <li>✓ Daily Meals Included</li>
+                        </ul>
+                        <button class="package-btn">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="assets/images/goa-package.jpg" alt="Goa Beach Package">
+                        <div class="package-overlay">
+                            <h3>Goa Beach Special</h3>
+                            <p>4 Days / 3 Nights</p>
                         </div>
                     </div>
-                    
-                    <!-- Optional Fields -->
-                    <div class="optional-fields">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="departureCity">Departure City</label>
-                                <input type="text" id="departureCity" name="departureCity">
-                            </div>
-                            <div class="form-group">
-                                <label for="hotelPreference">Hotel Preference</label>
-                                <select id="hotelPreference" name="hotelPreference">
-                                    <option value="Any">Any</option>
+                    <div class="package-content">
+                        <div class="package-price">
+                            <span class="price">₹12,999</span>
+                            <span class="per-person">Per Person</span>
+                        </div>
+                        <ul class="package-features">
+                            <li>✓ North & South Goa Tour</li>
+                            <li>✓ Beach Shacks Experience</li>
+                            <li>✓ Water Sports Package</li>
+                            <li>✓ Cultural Shows</li>
+                        </ul>
+                        <button class="package-btn">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="assets/images/mahabaleshwar-package.jpg" alt="Mahabaleshwar Package">
+                        <div class="package-overlay">
+                            <h3>Mahabaleshwar Retreat</h3>
+                            <p>3 Days / 2 Nights</p>
+                        </div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-price">
+                            <span class="price">₹10,999</span>
+                            <span class="per-person">Per Person</span>
+                        </div>
+                        <ul class="package-features">
+                            <li>✓ Mountain View Rooms</li>
+                            <li>✓ Strawberry Garden Visit</li>
+                            <li>✓ Sightseeing Tour</li>
+                            <li>✓ Breakfast & Dinner</li>
+                        </ul>
+                        <button class="package-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                    <!-- Holiday Destinations -->
+    <section class="holiday-destinations">
+        <div class="container">
+            <h2 class="section-title">Holiday Destinations</h2>
+            <div class="destinations-list">
+                <div class="destination-item">
+                    <div class="destination-image">
+                        <img src="assets/images/malwan.jpg" alt="Malwan">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Malwan</h3>
+                        <p>Pristine beaches & water sports</p>
+                    </div>
+                </div>
+                <div class="destination-item">
+                    <div class="destination-image">
+                        <img src="assets/images/goa.jpg" alt="Goa">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Goa</h3>
+                        <p>Beach paradise & cultural heritage</p>
+                    </div>
+                </div>
+                <div class="destination-item">
+                    <div class="destination-image">
+                        <img src="assets/images/mahabaleshwar.jpg" alt="Mahabaleshwar">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Mahabaleshwar</h3>
+                        <p>Hill station & strawberry gardens</p>
+                    </div>
+                </div>
+                <div class="destination-item">
+                    <div class="destination-image">
+                        <img src="assets/images/gokarna.jpg" alt="Gokarna">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Gokarna</h3>
+                        <p>Sacred beaches & temples</p>
+                    </div>
+                </div>
+                <div class="destination-item">
+                    <div class="destination-image">
+                        <img src="assets/images/matheran.jpg" alt="Matheran">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Matheran</h3>
+                        <p>Pollution-free hill station</p>
+                    </div>
+                </div>
+                <div class="destination-item">
+                    <div class="destination-image">
+                        <img src="assets/images/diveagar.jpg" alt="Diveagar">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Diveagar</h3>
+                        <p>Hidden coastal gem</p>
+                    </div>
+                </div>
+                <div class="destination-item">
+                    <div class="destination-image">
+                        <img src="assets/images/ganpati-pule.jpg" alt="Ganpati Pule">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Ganpati Pule</h3>
+                        <p>Spiritual beach destination</p>
+                    </div>
+                </div>
+                <div class="destination-item">
+                    <div class="destination-image">
+                        <img src="assets/images/sindhudurga.jpg" alt="Sindhudurga">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Sindhudurga</h3>
+                        <p>Historic coastal beauty</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories-section">
+        <div class="container">
+            <h2 class="section-title">Categories</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">🏖️</div>
+                    <h3>Coastal Tour</h3>
+                    <p>Beach destinations & coastal experiences</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🌊</div>
+                    <h3>Beach Activities</h3>
+                    <p>Water sports & beach adventures</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">💕</div>
+                    <h3>Honeymoon</h3>
+                    <p>Romantic destinations & special packages</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">⛰️</div>
+                    <h3>Hills and Mountains</h3>
+                    <p>Hill stations & mountain retreats</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🥾</div>
+                    <h3>Adventure and Trekking</h3>
+                    <p>Thrilling adventures & trekking trails</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Family Leisure</h3>
+                    <p>Family-friendly destinations & activities</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🦁</div>
+                    <h3>Wildlife & Jungle Safari</h3>
+                    <p>Wildlife experiences & jungle safaris</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🎨</div>
+                    <h3>Color of India</h3>
+                    <p>Cultural experiences & heritage tours</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Actions -->
+    <section class="quick-actions">
+        <div class="container">
+            <div class="actions-grid">
+                <a href="#" class="action-card">
+                    <div class="action-icon">📸</div>
+                    <h3>Photo Gallery</h3>
+                    <p>View our travel memories</p>
+                </a>
+                <a href="#" class="action-card">
+                    <div class="action-icon">🎯</div>
+                    <h3>Customize Package</h3>
+                    <p>Create your perfect trip</p>
+                </a>
+                <a href="contact.html" class="action-card">
+                    <div class="action-icon">📞</div>
+                    <h3>Get in Touch</h3>
+                    <p>Contact us for inquiries</p>
+                </a>
+            </div>
+        </div>
+    </section>
                                     <option value="3★">3★</option>
                                     <option value="4★">4★</option>
                                     <option value="5★">5★</option>
