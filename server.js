@@ -1,7 +1,6 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
-const url = require('url');
 
 const PORT = 8000;
 
@@ -25,9 +24,13 @@ const mimeTypes = {
 };
 
 const server = http.createServer((req, res) => {
-  // Parse URL
-  const parsedUrl = url.parse(req.url);
-  let pathname = parsedUrl.pathname;
+  // Get URL pathname
+  let pathname = req.url;
+  
+  // Remove query parameters
+  if (pathname.includes('?')) {
+    pathname = pathname.split('?')[0];
+  }
   
   // Default to index.html for root
   if (pathname === '/') {
@@ -66,5 +69,5 @@ server.listen(PORT, () => {
   console.log(`  Local:   http://localhost:${PORT}`);
   console.log(`  Network: http://192.168.1.100:${PORT}`);
   console.log(`\nPress Ctrl+C to stop the server`);
-  console.log(`\nYour Unexia Travels website is ready! 🚀`);
+  console.log(`\nYour The Pride Holidays website is ready! 🚀`);
 });
